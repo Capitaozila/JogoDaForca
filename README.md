@@ -9,4 +9,4 @@
 
 </div>
 
-<div align="center"><h2>Já o site feito por mim com algumas mudanças do projeto inicial você pode vizualizar <a href="https://capitaozila.github.io/JogoDaForca/html/jogoforca.html">aqui</a></h2></div>
+<div align="center"><h2>Já o site feito por mim com algumas mudanças do projeto inicial você pode vizualizar <a href="https://capitaozila.github.io/JogoDaForca/html/jogoforca.html">aqui</a>. Caso você perca, pode apertar no botão com o icone de controle remoto, ou atualizar a página caso prefira.</h2></div>
