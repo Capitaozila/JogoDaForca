@@ -1,6 +1,6 @@
 #abreModalAddPalavra,
-#recarregar,
-#jogarAutomatico,
+#reload,
+#autoPlay,
 #jogarNovamente {
   position: fixed;
   height: 50px;
@@ -20,12 +20,12 @@
   right: 150px;
 }
 
-#recarregar {
+#reload {
   top: 10px;
   right: 10px;
 }
 
-#jogarAutomatico {
+#autoPlay {
   top: 10px;
   right: 80px;
 }
@@ -162,12 +162,12 @@
     bottom: 5px;
   }
 
-  #recarregar {
+  #reload {
     right: 10px;
     top: 70px;
   }
 
-  #jogarAutomatico {
+  #autoPlay {
     right: 10px;
     top: 130px;
   }
@@ -175,8 +175,8 @@
 
 @media screen and (max-width: 320px) {
   #abreModalAppPalavra,
-  #recarregar,
-  #jogarAutomatico,
+  #reload,
+  #autoPlay,
   #jogarNovamente {
     height: 40px;
     font-size: 2em;
