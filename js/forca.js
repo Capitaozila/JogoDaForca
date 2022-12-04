@@ -132,7 +132,7 @@ btnReiniciar.addEventListener("click", function () {
 
  function listaAutomatica(){ //ativa o modo manual
   if (jogoAutomatico == true) {
-      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-play-circle' ></i>"
+      document.getElementById("autoPlay").innerHTML = "<i class='bx bx-play-circle' ></i>"
       jogoAutomatico = false;
 
       document.getElementById("abreModalAddPalavra").style.display = "block";
@@ -140,7 +140,7 @@ btnReiniciar.addEventListener("click", function () {
       document.getElementById("status").innerHTML = "Modo Manual";
   }
   else if(jogoAutomatico == false){ //ativa o modo automático
-      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-pause-circle' ></i>"
+      document.getElementById("autoPlay").innerHTML = "<i class='bx bx-pause-circle' ></i>"
       jogoAutomatico = true;
 
       document.getElementById("abreModalAddPalavra").style.display = "none";
@@ -154,6 +154,7 @@ const btnAbreModal = document.getElementById("abreModalAddPalavra");
 
 btnAbreModal.onclick = function () {
   modal.style.display = "block";
+  btnAbreModal.innerHTML = "<i class='bx bx-message-square-add bx-rotate-270' ></i>"
 }
 
 const btnFechaModal = document.getElementById("fechaModal");
