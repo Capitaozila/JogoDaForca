@@ -172,3 +172,12 @@ window.onclick = function () {
     document.getElementById("addCategoria").value = "";
   }
 }
+
+function adicionarPalavra(){
+  let addPalavra = document.getElementById("addPalavra").value.toUppercase();
+  let addCategoria = document.getElementById("addCategoria").value.toUppercase();
+}
+
+function IsNullOrWhiteSpace(input){
+  return !input || !input.trim()
+}
