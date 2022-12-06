@@ -130,32 +130,14 @@ btnReiniciar.addEventListener("click", function () {
   location.reload();
 });
 
- function listaAutomatica(){ //ativa o modo manual
-  if (jogoAutomatico == true) {
-      document.getElementById("autoPlay").innerHTML = "<i class='bx bx-play-circle' ></i>"
-      jogoAutomatico = false;
-
-      document.getElementById("abreModalAddPalavra").style.display = "block";
-
-      document.getElementById("status").innerHTML = "Modo Manual";
-  }
-  else if(jogoAutomatico == false){ //ativa o modo automático
-      document.getElementById("autoPlay").innerHTML = "<i class='bx bx-pause-circle' ></i>"
-      jogoAutomatico = true;
-
-      document.getElementById("abreModalAddPalavra").style.display = "none";
-
-      document.getElementById("status").innerHTML = "Modo Automático";
-  }
-}
-
 const modal = document.getElementById("modal-alerta");
 const btnAbreModal = document.getElementById("abreModalAddPalavra");
 
 btnAbreModal.onclick = function () {
   modal.style.display = "block";
-  btnAbreModal.innerHTML = "<i class='bx bx-message-square-add bx-rotate-270' ></i>"
-}
+  btnAbreModal.innerHTML =
+    "<i class='bx bx-message-square-add bx-rotate-270' ></i>";
+};
 
 const btnFechaModal = document.getElementById("fechaModal");
 
@@ -163,7 +145,7 @@ btnFechaModal.onclick = function () {
   modal.style.display = "none";
   document.getElementById("addPalavra").value = "";
   document.getElementById("addCategoria").value = "";
-}
+};
 
 window.onclick = function () {
   if (event.target == modal) {
@@ -171,13 +153,4 @@ window.onclick = function () {
     document.getElementById("addPalavra").value = "";
     document.getElementById("addCategoria").value = "";
   }
-}
-
-function adicionarPalavra(){
-  let addPalavra = document.getElementById("addPalavra").value.toUppercase();
-  let addCategoria = document.getElementById("addCategoria").value.toUppercase();
-}
-
-function IsNullOrWhiteSpace(input){
-  return !input || !input.trim()
-}
+};
