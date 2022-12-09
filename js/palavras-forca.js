@@ -433,17 +433,24 @@ function listaAutomatica() {
 
 function adicionarPalavra() {
   let addPalavra = document.getElementById("addPalavra").value.toUpperCase();
-  let addCategoria = document.getElementById("addCategoria").value.toUpperCase();
+  let addCategoria = document
+    .getElementById("addCategoria")
+    .value.toUpperCase();
 
-  if (isNullOrWhiteSpace(addPalavra) || isNullOrWhiteSpace(addCategoria) || addPalavra.length < 3 || addCategoria.length < 3) {
-    abreModal("ATENÇÂO","Palavra ou Categoria inválidos");
+  if (
+    isNullOrWhiteSpace(addPalavra) ||
+    isNullOrWhiteSpace(addCategoria) ||
+    addPalavra.length < 3 ||
+    addCategoria.length < 3
+  ) {
+    abreModal("ATENÇÂO", "Palavra ou Categoria inválidos");
     return;
   }
 
   let palavra = {
     nome: addPalavra,
-    categoria: addCategoria
-  }
+    categoria: addCategoria,
+  };
 
   palavras.push(palavra);
 
@@ -452,7 +459,7 @@ function adicionarPalavra() {
   document.getElementById("addPalavra").value = "";
   document.getElementById("addCategoria").value = "";
 
-  console.log(palavra)
+  console.log(palavra);
 }
 
 function isNullOrWhiteSpace(input) {
