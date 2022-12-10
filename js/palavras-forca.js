@@ -454,7 +454,7 @@ function adicionarPalavra() {
 
   palavras.push(palavra);
 
-  // sortear
+  sortear(); //sorteia uma palavra
 
   document.getElementById("addPalavra").value = "";
   document.getElementById("addCategoria").value = "";
@@ -464,4 +464,19 @@ function adicionarPalavra() {
 
 function isNullOrWhiteSpace(input) {
   return !input || !input.trim();
+}
+
+function sortear(){
+  if (jogoAutomatico === true) {
+    location.reload();
+  }
+  else{
+    if (palavras.length > 0) {
+      listaDinamica = [];
+      criarPalavraSecreta();
+      montarPalavraNaTela();
+      tentativas = 6;
+    }
+
+  }
 }
