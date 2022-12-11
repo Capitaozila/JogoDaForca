@@ -144,6 +144,12 @@
   }
 }
 
+@media screen and (min-width: 320px){
+  #abreModalAddPalavra{
+    right: 10px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .modal-add-palavra {
     width: 50%;

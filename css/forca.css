@@ -88,7 +88,7 @@ body {
 
 /* aplicando media scren */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .teclas button {
     width: 30px;
     height: 30px;
@@ -115,12 +115,12 @@ body {
   }
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (max-width: 425px) {
   .teclas button {
     width: 36px;
     height: 36px;
     margin: 6px;
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 
   #categoria {
@@ -137,10 +137,13 @@ body {
 }
 
 @media screen and (max-width: 426px) {
+  .teclas {
+    margin: 0 0 0 20px;
+  }
   .teclas button {
-    width: 32px;
-    height: 32px;
-    margin: 4px;
+    width: 48px;
+    height: 48px;
+    margin: 4px 4px 4px 20px;
   }
 
   #categoria {
@@ -158,10 +161,10 @@ body {
 
 @media screen and (min-width: 769px) {
   .teclas button {
-    width: 50px;
-    height: 50px;
-    margin: 10px 10px 10px 80px;
-    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 40px;
+    font-size: 2.5em;
   }
 
   #categoria {
