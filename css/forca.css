@@ -20,6 +20,14 @@ body {
   height: 90vh;
 }
 
+svg {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 400px;
+  z-index: -1;
+}
+
 .container {
   display: flex;
   justify-content: center;
