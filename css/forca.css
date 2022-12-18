@@ -22,7 +22,7 @@ body {
 
 svg {
   position: fixed;
-  top: 50%;
+  top: 500px;
   left: 0;
   height: 400px;
   z-index: -1;
