@@ -405,6 +405,10 @@ function carregaListaAutomatica() {
       nome: "THE ORIGINALS",
       categoria: "SERIE",
     }),
+    (palavra087 = {
+      nome: "WANDINHA",
+      categoria: "SERIE",
+    })
   ];
 }
 
