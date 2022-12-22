@@ -61,9 +61,11 @@
 .modal-add-palavra {
   position: relative;
   background-color: #fefefe;
-  border: 8px solid #000;
-  border-radius: 10px;
+  border: 4px solid #000;
+  border-radius: 20px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   padding: 0;
   width: 80%;
@@ -77,14 +79,16 @@
 .modal-header-add-palavra {
   padding: 2px 16px;
   background-color: #ffd700;
+
   font-size: 1.3em;
   border-bottom: 2px solid #000;
+  border-radius: 16px 16px 0 0;
 }
 
 .close {
   float: right;
   color: #000;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -103,7 +107,6 @@
 .modal-body-add-palavra button {
   text-align: center;
   margin: 10px 0;
-  font-size: 1.5em;
   border-radius: 10px;
   outline: none;
   border: 1px solid #9c9c9c;
@@ -199,5 +202,17 @@
 
   h2 {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  svg {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 2560px){
+  svg {
+    height: 1200px;
   }
 }

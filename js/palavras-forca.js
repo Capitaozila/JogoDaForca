@@ -466,17 +466,26 @@ function isNullOrWhiteSpace(input) {
   return !input || !input.trim();
 }
 
-function sortear(){
+function sortear() {
   if (jogoAutomatico === true) {
     location.reload();
-  }
-  else{
+  } else {
     if (palavras.length > 0) {
       listaDinamica = [];
       criarPalavraSecreta();
       montarPalavraNaTela();
+      resetaTeclas();
       tentativas = 6;
     }
-
   }
+}
+
+function resetaTeclas() {
+  let teclas = document.querySelectorAll(".teclas > button");
+
+  teclas.forEach((x) => {
+    x.style.background = "#ffffff";
+    x.style.color = "#c51f5d";
+    x.disabled = false;
+  });
 }
