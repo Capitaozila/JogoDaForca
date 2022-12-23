@@ -480,6 +480,7 @@ function sortear() {
       montarPalavraNaTela();
       resetaTeclas();
       tentativas = 6;
+      piscarBotaoJogarNovamente(false);
     }
   }
 }
@@ -492,4 +493,13 @@ function resetaTeclas() {
     x.style.color = "#c51f5d";
     x.disabled = false;
   });
+}
+
+function piscarBotaoJogarNovamente(querJogar){
+  if(querJogar){
+    document.getElementById("jogarNovamente").style.display = "block";
+  }
+  else{
+    document.getElementById("jogarNovamente").style.display = "none";
+  }
 }

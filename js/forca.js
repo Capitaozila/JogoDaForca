@@ -35,7 +35,7 @@ function comparaLista(letra) {
         "Você perdeu!",
         "A palavra secreta era:<br> " + palavraSecretaSorteada
       );
-      piscarBotaoJogarNovamente();
+      piscarBotaoJogarNovamente(true);
     }
   } else {
     mudarStyleLetra("tecla-" + letra, false);
@@ -56,7 +56,7 @@ function comparaLista(letra) {
   if (vitoria === true) {
     tentativas = 0;
     abreModal("Você venceu!", "Parabéns, você acertou a palavra secreta!");
-    piscarBotaoJogarNovamente();
+    piscarBotaoJogarNovamente(true);
   }
 }
 
@@ -107,21 +107,6 @@ function abreModal(titulo, mensagem) {
   $("#myModal").modal({
     show: true,
   });
-}
-
-async function piscarBotaoJogarNovamente() {
-  while (jogarNovamente === true) {
-    document.getElementById("btn-reiniciar").style.backgroundColor = "yellow";
-    await atraso(500);
-    document.getElementById("btn-reiniciar").style.backgroundColor = "black";
-    await atraso(500);
-    document.getElementById("btn-reiniciar").style.backgroundColor = "white";
-    await atraso(500);
-    document.getElementById("btn-reiniciar").style.backgroundColor = "red";
-    await atraso(500);
-    document.getElementById("btn-reiniciar").style.backgroundColor = "blue";
-    await atraso(500);
-  }
 }
 
 let btnReiniciar = document.querySelector("#btn-reiniciar");

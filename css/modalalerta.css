@@ -1,3 +1,7 @@
+svg {
+  display: none;
+}
+
 #abreModalAddPalavra,
 #reload,
 #autoPlay,
@@ -41,8 +45,8 @@
 
 #jogarNovamente {
   display: none;
-  bottom: 15px;
-  left: 89%;
+  top: 0;
+  right: 8px;
 }
 
 .modal-container {
@@ -147,9 +151,13 @@
   }
 }
 
-@media screen and (min-width: 769px){
-  #abreModalAddPalavra{
+@media screen and (min-width: 769px) {
+  #abreModalAddPalavra {
     right: 150px;
+  }
+
+  svg {
+    display: block;
   }
 }
 
@@ -182,6 +190,13 @@
   }
 }
 
+@media screen and (max-width: 426px) {
+  #jogarNovamente {
+    top: 70px;
+    right: 6px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   #abreModalAppPalavra,
   #reload,
@@ -205,13 +220,13 @@
   }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   svg {
     height: 400px;
   }
 }
 
-@media screen and (min-width: 2560px){
+@media screen and (min-width: 2560px) {
   svg {
     height: 1200px;
   }
