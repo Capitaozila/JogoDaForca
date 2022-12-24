@@ -60,10 +60,6 @@ function comparaLista(letra) {
   }
 }
 
-async function atraso(tempo) {
-  return new Promise((resolve) => setTimeout(resolve, tempo));
-}
-
 function carregaImagemForca() {
   switch (tentativas) {
     case 5:
@@ -111,8 +107,7 @@ function abreModal(titulo, mensagem) {
 
 let btnReiniciar = document.querySelector("#btn-reiniciar");
 btnReiniciar.addEventListener("click", function () {
-  jogarNovamente = false;
-  location.reload();
+  abreModal("Luis Henrique - Portfolio","https://capitaozila.github.io/Port/")
 });
 
 const modal = document.getElementById("modal-alerta");

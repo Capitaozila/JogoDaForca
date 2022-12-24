@@ -425,13 +425,8 @@ function listaAutomatica() {
     document.getElementById("status").innerHTML = "Modo Manual";
   } else if (jogoAutomatico == false) {
     //ativa o modo automático
-    document.getElementById("autoPlay").innerHTML =
-      "<i class='bx bx-pause-circle' ></i>";
-    jogoAutomatico = true;
 
-    document.getElementById("abreModalAddPalavra").style.display = "none";
-
-    document.getElementById("status").innerHTML = "Modo Automático";
+    location.reload();
   }
 }
 
