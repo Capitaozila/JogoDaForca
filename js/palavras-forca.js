@@ -408,7 +408,7 @@ function carregaListaAutomatica() {
     (palavra087 = {
       nome: "WANDINHA",
       categoria: "SERIE",
-    })
+    }),
   ];
 }
 
@@ -421,8 +421,13 @@ function listaAutomatica() {
     jogoAutomatico = false;
 
     document.getElementById("abreModalAddPalavra").style.display = "block";
-
     document.getElementById("status").innerHTML = "Modo Manual";
+
+    document.getElementById("categoria").innerHTML = "";
+    document.getElementById("palavra-secreta").innerHTML = "";
+
+    palavraSecretaCategoria = "";
+    palavraSecretaSorteada = "";
   } else if (jogoAutomatico == false) {
     //ativa o modo automático
 
@@ -461,6 +466,12 @@ function adicionarPalavra() {
   console.log(palavra);
 }
 
+function addPalavraEnter(e) {
+  if (e.code === "Enter") {
+    document.getElementById("addPalavraManual").click();
+  }
+}
+
 function isNullOrWhiteSpace(input) {
   return !input || !input.trim();
 }
@@ -490,11 +501,10 @@ function resetaTeclas() {
   });
 }
 
-function piscarBotaoJogarNovamente(querJogar){
-  if(querJogar){
+function piscarBotaoJogarNovamente(querJogar) {
+  if (querJogar) {
     document.getElementById("jogarNovamente").style.display = "block";
-  }
-  else{
+  } else {
     document.getElementById("jogarNovamente").style.display = "none";
   }
 }

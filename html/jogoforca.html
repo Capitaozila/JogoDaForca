@@ -124,14 +124,16 @@
               id="addPalavra"
               placeholder="Digite a nova palavra"
               type="password"
+              onkeyup="return addPalavraEnter(event);"
             >
             <label for="addCategoria"></label
             ><input
               id="addCategoria"
               placeholder="Digite a nova categoria"
               type="text"
+              onkeyup="return addPalavraEnter(event);"
             >
-            <button onclick="adicionarPalavra()">Adicionar</button>
+            <button onclick="adicionarPalavra()" id="addPalavraManual" >Adicionar</button>
           </div>
         </div>
       </div>
